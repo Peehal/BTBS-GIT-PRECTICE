@@ -1,0 +1,73 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(245, 223, 238);
+   
+}
+.clock {
+    border: 2px solid darkblue;
+    border-radius: 50%;
+    height: 50vh;
+    width: 50vh;
+    background-color: rgb(224, 240, 245);
+    box-shadow: inset 1px 1px 12px blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+ .innerb{
+    border: 2px solid darkblue;
+    border-radius: 50%;
+    height: 48vh;
+    width: 48vh;
+    background-color: rgb(224, 240, 245); 
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(190, 13, 146);
+    position:absolute;
+}
+.hour{
+    width: 5px;
+    height:56px ;
+    border-radius: 50%;
+ 
+ background-color: purple;
+    position: absolute;
+    bottom: 50%;
+}
+.minute{
+    width: 3px;
+    height: 80px;
+    background-color: rgb(128, 18, 171);
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+}
+.second{
+    width: 2px;
+    height: 130px;
+    background-color: rgb(248, 168, 248);
+    position: absolute;
+    border-radius: 50%;
+    bottom: 50%;
+}
+
+.number{
+    transform: rotate(calc(30deg * var(--n) ));
+    position: absolute;
+    text-align: center;
+    inset: 10px;
+    font-size: larger;
+}
+
+
